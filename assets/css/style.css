@@ -1,5 +1,13 @@
-div{
-	background-color: blue;
-	margin: 10px;
-	width: 25%
+.heading{
+
+    background-color: red;
+}
+
+.rules{
+    background-color: blue;
+}
+
+#user{
+
+    background-color: green;
 }
