@@ -19,62 +19,88 @@
   </head>
 
 
-        <body>
-          <div class ="container">
-
-          <div class ="row">
-                <div class ="col-m-7 heading">
-                  <h1>Crystal Collectors</h1>
-                  </div>
-
-                  <div class ="col-m-5"></div>
-                  </div>
-
-          <div class ="row">
-                    <br>
-                    <br>
-                  <div class ="col-m-6 rules">
-                      <p> You will be given a random number at the start of the game.</p>
-                      <p> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-                      <p> You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number. </p>
-                      <p> Each time the game starts, the game will change the values of each crystal.</p>
-                  </div>
-                  <div class ="col-m-6">
-                    </div>
-                  </div>
-         <div class ="row"></div>       
-                    <br>
-                    <br>
-                  </div>  
-                    <br>
-                    <br>
-                  <div class ="row col-m-12">
-                    <h2 id = "user">Randomly Generated: <span id ="userScore">0</span></h2>
-                  </div>
-                    <br>
-                  <div class = "row">
-                    <div class = "col-m-12">
-                    <h1><span id="winorLose"></span></h1>
-                    <h2>Wins: <span id="win"></span></h2>
-                    <h2>Losses: <span id="loss"></span> </h2>
-                  </div>   
-                  </div> 
-                  <div class = "row">
-                    <h2>User Guess: <span id="guess"></span> </h2>
-                  </div>
-                  <div id = 'crystals'>
-                  <img src ="assets\images\green.jpg"><img src ="assets\images\pink.jpg"><img src ="assets\images\purple.png"><img src ="assets\images\red.jpg">
-                  </div>
-
-               
-
-                </div>
-                  
-
-              </body>
-
-              <!-- This will call javascript game.js -->
-              <script type="assets/javascript/game.js"></script>
-              </html>
-
-              
+  <body>
+    <div class="container">
+    <section>
+      <div class="panel panel-default">
+        <div class="row"> 
+          <div class="col-lg-12">
+             <div class="panel-heading">
+               <div class="panel-title">
+                 <h1>Crystal<img src="assets/images/crystal2.gif" style="width: 120px; height: 130px;">Collector</h1>
+               </div>
+              </div>
+              <hr style="width: 95%;">
+              <div class="panel-body" class="text-aline: center;">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>By clicking on one of the four crystals below, a specific amount of points will be added to your total score.</p>
+                <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                <p>The value of each crystal is hidden from you u til you click on it.</p>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+              </div>
+          </div>	
+        </div>
+      </div>
+      
+      <div class="panel panel-default" id="panel1">
+         <div class="row">  
+          <div class="col-lg-12">
+              <div class="panel-body">
+                <h2>Target Number: <span class="targetNumber"></span></h2>
+              </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="panel panel-default" id="panel2">
+        <div class="row"> 
+          <div class="col-lg-12">
+              <div class="panel-body">
+                <h2>Your Count: <span class="yourNumber"></span></h2> 
+              </div>
+          </div>	
+        </div>
+      </div>
+  
+      <div class="panel panel-default" class="crystals" id="panel3">
+        <div class="row"> 
+          <div class="col-lg-12">
+              <div class="panel-body">
+                <div class="playSound" id="audio">
+              <img class="crystalOne" alt="red" src="assets/images/red.jpg">
+              <img class="crystalTwo" alt="multi" src="assets/images/purple.png">
+              <img class="crystalThree" alt="green" src="assets/images/pink.jpg">
+                <img class="crystalFour" alt="blue" src="assets/images/green.jpg">
+              </div>  
+              </div>
+          </div>	
+        </div>
+      </div>
+  
+      <div class="panel panel-default" id="panel4">
+         <div class="row"> 
+          <div class="col-lg-12">
+              <div class="panel-body">
+                <div>
+                  <h5>Status:  <span class="gameStatus"></span></h5>
+                  <h5> <span class="winCounter"></span></h5>
+                  <h5> <span class="lossCounter"></span></h5>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  
+  </section>
+  </div>		
+  
+      
+      
+      <a href="#" class="playSound"></a>
+      <a href="#" class="crystals"></a>
+  
+                      <!-- This will call the javascript 'game.js' -->
+          <script type="text/javascript" src="assets/javascript/game.js"></script>
+  
+      </body>
+  </html>
