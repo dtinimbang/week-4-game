@@ -1,13 +1,17 @@
-.panel-default{
+body{
+    background-color: black;
+}
+.crystals{
+    display:flex;
+    justify-content:space-between;
+    border:1px solid red;
+    align-items: center;
 
-    background-color: red;
 }
 
-.rules{
-    background-color: blue;
-}
+.crystal{
 
-#user{
-
-    background-color: green;
+    border:1px solid green;
+    height: 200px;
+    width: 200px;
 }
