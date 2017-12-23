@@ -1,7 +1,7 @@
 var random_result;
-var lost;
-var win;
-var previous;
+var lost =0;
+var win=0;
+var previous =0;
 
 
 
@@ -29,14 +29,25 @@ $(".crystal").on('click', function() {
 
 
 
-   var num = $(this).attr('data-random');
+   var num = parseInt($(this).attr('data-random'));
 
    var result = num + 5;
 
-   console.log(result);
+    previous += num;
+    console.log(previous);
+    if(previous > random_result){
+        console.log("loser");
+    }
+    else if (previous === random_result){
+        console.log('winner');
+    }
 
-  console.log(typeof num);
+    
+
+    
+   //console.log(result);
+
+
   
 
-}
-);
+});
