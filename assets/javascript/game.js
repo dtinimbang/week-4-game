@@ -1,6 +1,7 @@
 var random_result;
 var lost;
 var win;
+var previous;
 
 
 
@@ -25,8 +26,17 @@ for (var i = 0; i<4; i++){
 }
 
 $(".crystal").on('click', function() {
-   console.log($(this).attr('data-random'));
 
+
+
+   var num = $(this).attr('data-random');
+
+   var result = num + 5;
+
+   console.log(result);
+
+  console.log(typeof num);
+  
 
 }
-)
+);
