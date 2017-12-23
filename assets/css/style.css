@@ -1,10 +1,16 @@
 body{
     background-color: white;
 }
+
+#name{
+    font-size: 40px;
+
+}
+
 .crystals{
     display:flex;
     justify-content:space-between;
-    border:1px solid red;
+    border:1px solid white;
     align-items: center;
 
 }

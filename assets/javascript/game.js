@@ -7,8 +7,7 @@ var guess =0;
 var startGame = function() {
     $(".crystals").empty(); //empty the crystal
 
-    var image =[]
-    [0]= 
+
 
     random_result = Math.floor(Math.random() * 69) + 30; // generate new result
     console.log(random_result); // log new number
@@ -23,9 +22,11 @@ var startGame = function() {
         crystal.attr({          //add attribute to class
             "class": 'crystal',
             "data-random": random  // game with 4 crystals and a random result
-        });
+               });
     
-       
+       crystal.css({
+           "background":"purple"
+       })
     
         $(".crystals").append(crystal);
     }
