@@ -1,7 +1,7 @@
 var random_result;
 var lost =0;
 var win=0;
-var previous =0;
+var guess =0;
 
 
 
@@ -22,6 +22,8 @@ for (var i = 0; i<4; i++){
         "data-random": random  // game with 4 crystals and a random result
     });
 
+   
+
     $(".crystals").append(crystal);
 }
 
@@ -33,12 +35,16 @@ $(".crystal").on('click', function() {
 
    var result = num + 5;
 
-    previous += num;
-    console.log(previous);
-    if(previous > random_result){
+    guess += num;
+    console.log(guess);
+    if(guess > random_result){
+        lost--;
+        $("#lost").html("lose: " + win);
         console.log("loser");
     }
-    else if (previous === random_result){
+    else if (guess === random_result){
+        win++
+        $("#win").html("win: " + win);
         console.log('winner');
     }
 
