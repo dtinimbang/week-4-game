@@ -6,7 +6,7 @@ var win;
 random_result = Math.floor(Math.random() * 69) + 30; // hoisting
 console.log(random_result);
 
-$("#result").html('Random Result:  ');
+$("#result").html('Random Result:  ' + random_result);
 for (var i = 0; i<4; i++){
 
     var random = Math.floor(Math.random() * 11) +1; // randomizes no.
