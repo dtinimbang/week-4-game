@@ -3,6 +3,9 @@ var lost;
 var win;
 
 
+
+
+
 random_result = Math.floor(Math.random() * 69) + 30; // hoisting
 console.log(random_result);
 
@@ -20,3 +23,10 @@ for (var i = 0; i<4; i++){
 
     $(".crystals").append(crystal);
 }
+
+$(".crystal").on('click', function() {
+   console.log($(this).attr('data-random'));
+
+
+}
+)
