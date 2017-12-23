@@ -1,104 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Crystal Collector Game</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Bootstrap CDN -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<!-- jQuery CDN -->
-	<script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-	<!-- Stylesheets -->
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
-	
-</head>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
 
-<body>
-	<div class="container">
-	<section>
-		<div class="panel panel-default">
-			<div class="row"> 
-				<div class="col-lg-12">
-		 			<div class="panel-heading">
-		 				<div class="panel-title">
-		 					<h1>Crystal<img src="assets/images/crystal2.gif" style="width: 120px; height: 130px;">Collector</h1>
-		 				</div>
-		  			</div>
-		  			<hr style="width: 95%;">
-		  			<div class="panel-body" class="text-aline: center;">
-		    			<p>You will be given a random number at the start of the game.</p>
-		    			<p>By clicking on one of the four crystals below, a specific amount of points will be added to your total score.</p>
-		    			<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-		    			<p>The value of each crystal is hidden from you u til you click on it.</p>
-		    			<p>Each time when the game starts, the game will change the values of each crystal.</p>
-		  			</div>
-				</div>	
-			</div>
-		</div>
-		
-		<div class="panel panel-default" id="panel1">
-		 	<div class="row">  
-				<div class="col-lg-12">
-		  			<div class="panel-body">
-		    			<h2>Target Number: <span class="targetNumber"></span></h2>
-		  			</div>
-				</div>
-			</div>
-		</div>
+  <head>
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js">
+ 
+ //Pseudo Code
+ //game with 4 crystals ea. with random no.   
+  
 
-		<div class="panel panel-default" id="panel2">
-			<div class="row"> 
-				<div class="col-lg-12">
-		  			<div class="panel-body">
-		    			<h2>Your Count: <span class="yourNumber"></span></h2> 
-		  			</div>
-				</div>	
-			</div>
-		</div>
+    </script>
 
-		<div class="panel panel-default" class="crystals" id="panel3">
-			<div class="row"> 
-				<div class="col-lg-12">
-		  			<div class="panel-body">
-		  				<img class="crystalOne" alt="red" src="assets/images/red.jpg">
-						<img class="crystalTwo" alt="purple" src="assets/images/purple.png">
-						<img class="crystalThree" alt="pink" src="assets/images/pink.jpg">
-		  				<img class="crystalFour" alt="green" src="assets/images/green.jpg">
-						</div>  
-		    		</div>
-				</div>	
-			</div>
-		</div>
+  </head>
 
-		<div class="panel panel-default" id="panel4">
-		 	<div class="row"> 
-				<div class="col-lg-12">
-		  			<div class="panel-body">
-		  				<div>
-		  					<h5>WIN / LOSS:  <span class="gameStatus"></span></h5>
-		  					<h5> <span class="winCounter"></span></h5>
-		  					<h5> <span class="lossCounter"></span></h5>
-						</div>
-		  			</div>
-				</div>
-			</div>
-		</div>
 
-</section>
-</div>		
+  <body>
 
-		
-		
-		
+<div class="crystal"></div>
 
-                    <!-- This will call the javascript 'game.js' -->
-        <script type="text/javascript" src="assets/javascript/game.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 
-    </body>
+	</body>
 </html>
